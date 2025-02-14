@@ -1,6 +1,32 @@
+.logo{
+    text-align: center;
+}
+
 body {
-    background-color: cadetblue;
+    background-color: rgb(84, 137, 145);
     margin: 0;
     text-align: center;
 
 }
+
+h1 {
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 65px;
+    border: 2px solid black;
+    padding: 20px;
+    width: 800px;
+    height: 150px;
+
+}
+
