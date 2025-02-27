@@ -34,9 +34,9 @@ h2{
 
 .book_list{
     width:100%;
-    max-width:540px;
+    max-width:1000px;
     background: whitesmoke;
-    margin: 100px auto 20px;
+    margin: 200px auto 20px;
     padding:  40px 30px 70px;
     border-radius: 10px;
 }
@@ -53,7 +53,7 @@ h2{
     align-items: center;
     justify-content:space-between;
     background: rgb(224, 223, 224);
-    border-radius: 30px;
+    border-radius: 20px;
     padding-left: 20px;
     margin-bottom: 20px;
 }
@@ -61,7 +61,7 @@ h2{
 input{
     flex:1;
     border:none;
-    outline: gray;
+    outline: rgb(182, 182, 182);
     background: transparent;
     padding: 10px;
 }
@@ -84,39 +84,62 @@ ul li{
     padding: 8px 50px;
     user-select: none;
     cursor: pointer;
+    display: flex;
+    border-radius: 8px;
+    margin: 5px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 
 
-.status-buttons button {
+
+  .Status-drop {
     border: none;
     outline: none;
     padding: 8px 12px;
-    margin: 1px;
+    margin-left: 10px;
+    flex-grow: 1;
     border-radius: 10px;
     cursor: pointer;
     font-size: 0.9rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.status-buttons button.to-read {
-    background-color: #2196F3;
-    color: rgb(0, 0, 0);
-  }
-  
-  .status-buttons button.reading {
-    background-color: #FF9800;
-    color: rgb(0, 0, 0);
-  }
-  
-  .status-buttons button.completed {
-    background-color: #4CAF50;
-    color: rgb(0, 0, 0);
-  }
+.Status-drop select {
+    border: 2px solid #6f49d8;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
 
-  .status-buttons button.delete {
-    background-color: #d40202;
-    color: rgb(0, 0, 0);
-  }
+.book-item {
+    list-style: none;
+    font-size: 20px;
+    text-align: left;
+    padding: 8px 50px;
+    user-select: none;
+    cursor: pointer;
+    background: whitesmoke;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.delete-button{
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    height: 45px;
+    transition: background-color 0.3s; 
+}
+.delete-btn:hover {
+    background-color: #ff1a1a; 
+}
 

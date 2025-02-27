@@ -23,56 +23,71 @@
     <div class="book_list">
       <h1>Reading Log</h1>
       <div class="add_book">
-        <input type="text" id="input-box" placeholder="Add A Book">
+        <input type="text" id="input-box1" placeholder="Enter book title ">
+        <input type="text" id="input-box2" placeholder="Enter Author">
         <button onclick="AddBook()">Add</button>
     </div>
+
+  
    
     <ul id="list_container">
-      <li>Book 1 
-        <div class="status-buttons">
-          <button class="to-read" onclick="setStatus(this)">To Read</button>
-          <button class="reading" onclick="setStatus(this)">Reading</button>
-          <button class="completed" onclick="setStatus(this)">Completed</button>
-          <button class="delete" onclick="setStatus(this)">Delete</button>
+      <li class="book-item">
+      Misery by Stephen King
+        <div class="Status-drop">
+          <label for="statuses">Status:</label>
+          <select name="statuses" id="statuses">
+            <option value="Reading">Reading</option>
+            <option value="To Read">To-Read</option>
+            <option value="Completed">Completed</option>
+          </select>
         </div>
+        
       </li>
-      <li>Book 2 
-        <div class="status-buttons">
-          <button class="to-read" onclick="setStatus(this)">To Read</button>
-          <button class="reading" onclick="setStatus(this)">Reading</button>
-          <button class="completed" onclick="setStatus(this)">Completed</button>
-          <button class="delete" onclick="setStatus(this)">Delete</button>
-        </div>
-      </li>
-      <li>Book 3 
-        <div class="status-buttons">
-          <button class="to-read" onclick="setStatus(this)">To Read</button>
-          <button class="reading" onclick="setStatus(this)">Reading</button>
-          <button class="completed" onclick="setStatus(this)">Completed</button>
-          <button class="delete" onclick="setStatus(this)">Delete</button>
-        </div>
-      </li>
-    </ul>
-  </div>
-    <dl>
-        <dt>Misery</dt>
-        <dd>Stephen King</dd>
-        <dt>The Fury</dt>
-        <dd>Alex Michaelides</dd>
-        <dt>Bird Box</dt>
-        <dd>Josh Malerman </dd>
-        <dt>The September House</dt>
-        <dd>Carissa Orlando</dd>
-        <dt>Pen Pal</dt>
-        <dd>Dathan Auerbach</dd>
-        <dt>The Shining</dt>
-        <dd>Stephen King</dd>
-        <dt>Local Woman Missing</dt>
-        <dd>Mary Kubica</dd>
-    </dl>
 
-     <button>Delete A Book</button>
+      <li class="book-item">
+        The Fury by Alex Michaelides
+        <div class="Status-drop">
+          <label for="statuses">Status:</label>
+          <select name="statuses" id="statuses">
+            <option value="Reading">Reading</option>
+            <option value="To Read">To-Read</option>
+            <option value="Completed">Completed</option>
+          </select>
+          </div>
+       
+   </li>
 
+   <li class="book-item">
+    The September House by Carissa Orlando
+    <div class="Status-drop">
+      <label for="statuses">Status:</label>
+      <select name="statuses" id="statuses">
+        <option value="Reading">Reading</option>
+        <option value="To Read">To-Read</option>
+        <option value="Completed">Completed</option>
+      </select>
+      </div>
+    
+</li>
+
+<li class="book-item">
+  The Last House On Needless Street by Catriona Ward
+  <div class="Status-drop">
+    <label for="statuses">Status:</label>
+    <select name="statuses" id="statuses">
+      <option value="Reading">Reading</option>
+      <option value="To Read">To-Read</option>
+      <option value="Completed">Completed</option>
+    </select>
+    </div>
+  
+</li>
+</ul>
+    
+
+     
+
+  
    
      <link href="books.css" type = "text/css" rel="stylesheet">
      <script src="books.js"></script>
