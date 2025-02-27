@@ -1,3 +1,7 @@
+
+
+
+
 .logo{
     text-align: center;
 }
@@ -34,18 +38,44 @@ h2{
 
 .book_list{
     width:100%;
-    max-width:1000px;
+    max-width:2000px;
     background: whitesmoke;
     margin: 200px auto 20px;
     padding:  40px 30px 70px;
     border-radius: 10px;
+    
 }
+
 
 .book_list h1{
     color: #9a83da;
     align-items: center;
     margin-bottom: 20px;
 
+}
+
+.book-item {
+    display: flex;               /* Use flexbox to align elements */
+    justify-content: space-between; /* Align the content to both sides */
+    align-items: center;         /* Vertically center the elements */
+    padding: 8px 20px;           /* Adjust the padding to suit your design */
+    margin: 5px 0;               /* Margin between items */
+    background: whitesmoke;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-item .book-info {
+    flex: 1;                      /* Take up all available space */
+    text-align: left;             /* Align text to the left */
+    padding-right: 10px;          /* Space between text and controls */
+}
+
+.book-item .book-controls {
+    display: flex;                /* Align dropdown and button in a row */
+    align-items: center;          /* Vertically center the elements */
+    justify-content: flex-end;    /* Push them to the right */
 }
 
 .add_book{
@@ -138,6 +168,7 @@ ul li{
     font-size: 14px;
     height: 45px;
     transition: background-color 0.3s; 
+    margin-left: 10px;
 }
 .delete-btn:hover {
     background-color: #ff1a1a; 

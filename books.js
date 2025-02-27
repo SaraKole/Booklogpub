@@ -58,6 +58,33 @@ function AddBook(){
         drop.appendChild(label);
         drop.appendChild(select);
 
+        const drop2 = document.createElement("div");
+        drop2.classList.add("Status-drop");
+
+        const label2 = document.createElement("label");
+        label2.setAttribute("for","genres");
+        label2.textContent = "Genre";
+
+        const select2 = document.createElement("select");
+        select2.setAttribute("name","genres");
+        select2.setAttribute("id","genres");
+
+        select2.innerHTML= ` <option value="Fiction">Fiction</option>
+              <option value="Non-Fiction">Non-Fiction</option>
+              <option value="Horror">Horror</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Drama">Drama</option>
+              <option value="Motivational">Motivational</option>
+              <option value="True crime">True Crime</option>
+              <option value="Autobiography">Autobiography</option>
+              <option value="Cookbook">Cookbook</option>
+              <option value="Mythology">Mythology</option>`;
+            
+        drop2.appendChild(label2);
+        drop2.appendChild(select2);
+
+
+
     
         const deleteButton =  document.createElement("button");
         deleteButton.innerHTML= 'Delete';
@@ -67,6 +94,7 @@ function AddBook(){
        };
 
        li.appendChild(drop);
+       li.appendChild(drop2);
        li.appendChild(deleteButton);
        listContainer.appendChild(li);
 
