@@ -28,7 +28,7 @@ function AddBook(){
     const authorInput = inputBox2.value.trim();
     const listContainer= document.getElementById("list_container");
 
-    if (titleInput.value === '' || authorInput.value === ''){
+    if (titleInput=== '' || authorInput === ''){
         alert("Please enter the book title and auhtor.");
         return;
     }
@@ -83,7 +83,21 @@ function AddBook(){
         drop2.appendChild(label2);
         drop2.appendChild(select2);
 
+        const check = document.createElement("div");
+        check.classList.add("recommendation");
 
+        const checkLabel = document.createElement("label");
+        checkLabel.textContent = "Recommend this book?";
+        
+
+        const checkbox = document.createElement("input");
+        checkbox.type= "checkbox";
+        checkbox.classList.add("checkbox");
+
+
+        check.appendChild(checkLabel);
+        check.appendChild(checkbox);
+        
 
     
         const deleteButton =  document.createElement("button");
@@ -95,7 +109,9 @@ function AddBook(){
 
        li.appendChild(drop);
        li.appendChild(drop2);
+       li.appendChild(check);
        li.appendChild(deleteButton);
+    
        listContainer.appendChild(li);
 
     inputBox1.value = '';

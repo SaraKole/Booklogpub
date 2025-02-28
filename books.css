@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(130deg, #429ace, #6f49d8);
+    background: linear-gradient(130deg, #6f49d8,rgb(187, 161, 212));
     margin: 0;
     text-align: center;
     width: 100%;
@@ -30,7 +30,7 @@ h2{
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 10px;
-    border: 2px solid black;
+    
     padding:  20px 20px 50px;
     
 
@@ -55,11 +55,11 @@ h2{
 }
 
 .book-item {
-    display: flex;               /* Use flexbox to align elements */
-    justify-content: space-between; /* Align the content to both sides */
-    align-items: center;         /* Vertically center the elements */
-    padding: 8px 20px;           /* Adjust the padding to suit your design */
-    margin: 5px 0;               /* Margin between items */
+    display: flex;              
+    justify-content: space-between; 
+    align-items: center;         
+    padding: 8px 20px;         
+    margin: 5px 0;               
     background: whitesmoke;
     border-radius: 5px;
     font-size: 20px;
@@ -67,16 +67,12 @@ h2{
 }
 
 .book-item .book-info {
-    flex: 1;                      /* Take up all available space */
-    text-align: left;             /* Align text to the left */
-    padding-right: 10px;          /* Space between text and controls */
+    flex: 1;                    
+    text-align: left;            
+    padding-right: 10px;         
 }
 
-.book-item .book-controls {
-    display: flex;                /* Align dropdown and button in a row */
-    align-items: center;          /* Vertically center the elements */
-    justify-content: flex-end;    /* Push them to the right */
-}
+
 
 .add_book{
     display: flex;
@@ -173,4 +169,29 @@ ul li{
 .delete-btn:hover {
     background-color: #ff1a1a; 
 }
+
+.recommendation{
+   display: flex;
+   align-items: center;
+   margin-left: 10px;
+}
+
+.recommendation label{
+    margin-right: 8px;
+    font-size: 0.9rem;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    cursor:pointer;
+    margin-top: 0;
+}
+
+.checkbox:checked{
+    accent-color: #6f49d8;
+}
+
 
